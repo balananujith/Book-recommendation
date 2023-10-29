@@ -54,7 +54,19 @@ def get_recommended_genre(genre_name, df, similarity):
     else:
         return None
 
+    background-color: #ff5733; /* Change the color to your preference */
+    color: white;
+}
+.button-primary:hover {
+    background-color: #ff794d; /* Change the hover color to your preference */
+}
+</style>
+"""
+
 st.set_page_config(page_title="Book Recommendation System", page_icon=":books:", layout="wide", initial_sidebar_state="expanded")
+
+# Inject the custom CSS into the app
+st.markdown(button_css, unsafe_allow_html=True)
 
 def main():
     list_of_genre = df['Genre'].unique().tolist()
@@ -63,30 +75,28 @@ def main():
 
     genre_name = st.selectbox('Select your Genre:', list_of_genre)
 
-  # Center the "Show Books" button by adding an empty space
-    col1, col2, col3 = st.columns([1, 1, 1])
-    with col2:
-        if st.button('Show Books'):
-            recommended_genre = get_recommended_genre(genre_name, df, similarity)
-            if recommended_genre:
-                st.header('Recommended Books for you: ')
-                for i, genre in enumerate(recommended_genre, start=1):
-                    st.write(f"{i}. {genre}")
-            else:
-                st.warning('No close matches found for the given book name.')
+    if st.button('Show Books', key="show_books", help="show_books", class_="button-primary"):
+
+        recommended_genre = get_recommended_genre(genre_name, df, similarity)
+
+        if recommended_genre:
+            st.header('Recommended Books for you: ')
+            for i, genre in enumerate(recommended_genre, start=1):
+                st.write(f"{i}. {genre}")
+        else:
+            st.warning('No close matches found for the given book name.')
 
     book_name = st.text_input('Enter your Book name:')
-    col1, col2, col3 = st.columns([1, 1, 1])
-    with col2:
-        if st.button('Recommend'):
-            recommended_books = get_recommended_books(book_name, df, similarity)
 
-            if recommended_books:
-                st.header('Recommended Books for you:')
-                for i, book in enumerate(recommended_books, start=1):
-                    st.write(f"{i}. {book}")
-            else:
-                st.warning('No close matches found for the given book name.')
+    if st.button('Recommend', key="recommend", help="recommend", class_="button-primary"):
+        recommended_books = get_recommended_books(book_name, df, similarity)
+
+        if recommended_books:
+            st.header('Recommended Books for you:')
+            for i, book in enumerate(recommended_books, start=1):
+                st.write(f"{i}. {book}")
+        else:
+            st.warning('No close matches found for the given book name.')
 
 if __name__ == "__main__":
     main()
