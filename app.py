@@ -64,7 +64,7 @@ def main():
     genre_name = st.selectbox('Select your Genre:', list_of_genre)
 
   # Center the "Show Books" button by adding an empty space
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 0, 1])
     with col2:
         if st.button('Show Books'):
             recommended_genre = get_recommended_genre(genre_name, df, similarity)
