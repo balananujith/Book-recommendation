@@ -1,10 +1,9 @@
 # Book-Recommendation-System:
 
-This repository represents " Book Recommmendation System ".
-With the help of this project we can predict and recommend books to user based on their interested genre or book
+This repository offers a genre-based book recommendation system, facilitating tailored book suggestions.
 
 # 📝 Description: 
-This model is made to predict and recommend books for user based on their interested genre or book. The model is based on the mathematical concept Cosine Similarity
+This repository offers a genre-based book recommendation system, facilitating tailored book suggestions. It encompasses data collection, genre-specific models, and evaluation tools. With clear documentation and user interfaces, it's a valuable resource for building book recommendations personalized by genre preferences.
 
 # ⏳ Dataset:
 Download the dataset:
@@ -12,6 +11,9 @@ https://gist.github.com/jaidevd/23aef12e9bf56c618c41
 
 # 🛠️ Requirements:
 Python 3.5+
+Pandas
+Scikit-learn
+Matplotlib
 Streamlit
 Windows
 
@@ -21,7 +23,6 @@ pip install streamlit
 
 # Outputs:
 
-![image](https://github.com/aniket-1177/Book-Recommendation-System/assets/123159505/8cc0c163-7f07-4fa7-ada5-8d665da763dd)
-![image](https://github.com/aniket-1177/Book-Recommendation-System/assets/123159505/f1b825c0-def1-4f8a-8cbb-0508ddb15997)
-![image](https://github.com/aniket-1177/Book-Recommendation-System/assets/123159505/605a2829-f2f8-416a-8de8-247599bf5c8f)
-![image](https://github.com/aniket-1177/Book-Recommendation-System/assets/123159505/38301032-c68c-47d9-88e1-63bb8e2b75ed)
+![book2](https://github.com/balananujith/Book-recommendation/assets/118455793/d09154e6-d8d1-49f0-8329-027ac16e875a)
+![book4](https://github.com/balananujith/Book-recommendation/assets/118455793/978eee3c-1d27-4d8f-9d40-0bec1a7b2439)
+![book3](https://github.com/balananujith/Book-recommendation/assets/118455793/afffde18-2219-4436-91bd-5abcc915709a)
