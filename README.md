@@ -26,3 +26,5 @@ pip install streamlit
 ![book7](https://github.com/balananujith/Book-recommendation/assets/118455793/672354b8-29c5-4789-a84d-07b5654e7466)
 ![book8](https://github.com/balananujith/Book-recommendation/assets/118455793/0808afdd-193d-4cf7-8e28-5dc412acaee4)
 
+# For viewing the site kindly click on the link below:
+https://book-recommendation-m6xrnm7ug2kgpcappih7vga.streamlit.app/
