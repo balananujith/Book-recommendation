@@ -22,7 +22,7 @@ def get_recommended_books(book_name, df, similarity):
             title_from_index = df[df.index == index]['Title'].values[0]
             recommended_books.append(title_from_index)
             i += 1
-            if i > 6:
+            if i > 10:
                 break
 
         return recommended_books
