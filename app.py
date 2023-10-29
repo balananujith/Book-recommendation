@@ -76,16 +76,17 @@ def main():
                 st.warning('No close matches found for the given book name.')
 
     book_name = st.text_input('Enter your Book name:')
+    col1, col2, col3 = st.columns([1, 1, 1])
+    with col2:
+        if st.button('Recommend'):
+            recommended_books = get_recommended_books(book_name, df, similarity)
 
-    if st.button('Recommend'):
-        recommended_books = get_recommended_books(book_name, df, similarity)
-
-        if recommended_books:
-            st.header('Recommended Books for you:')
-            for i, book in enumerate(recommended_books, start=1):
-                st.write(f"{i}. {book}")
-        else:
-            st.warning('No close matches found for the given book name.')
+            if recommended_books:
+                st.header('Recommended Books for you:')
+                for i, book in enumerate(recommended_books, start=1):
+                    st.write(f"{i}. {book}")
+            else:
+                st.warning('No close matches found for the given book name.')
 
 if __name__ == "__main__":
     main()
