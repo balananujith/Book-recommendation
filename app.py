@@ -78,7 +78,7 @@ def main():
                 print('No close matches found for the given book name.')
 
     book_name = st.text_input('Enter your Book name:')
-     col1, col2, col3 = st.columns([1, 1, 1])  # Adjust the width of the center column (col2)
+    col1, col2, col3 = st.columns([1, 1, 1])  # Adjust the width of the center column (col2)
     with col2:
         if st.button('Recommend'):
             recommended_books = get_recommended_books(book_name, df, similarity)
