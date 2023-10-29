@@ -12,7 +12,7 @@ def get_recommended_books(book_name, df, similarity):
 
     if find_close_match:
         close_match = find_close_match[0]
-        index_of the_book = df[df['Title'] == close_match]['Index'].values[0]
+        index_of_the_book = df[df['Title'] == close_match]['Index'].values[0]
         similarity_score = list(enumerate(similarity[index_of_the_book]))
         sorted_list = sorted(similarity_score, key=lambda x: x[1], reverse=True)
 
