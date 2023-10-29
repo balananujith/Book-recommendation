@@ -22,7 +22,7 @@ Install Streamlit :-
 pip install streamlit
 
 # Outputs:
+![book6](https://github.com/balananujith/Book-recommendation/assets/118455793/f33fc56b-82a9-4815-bff1-f61d6ff91143)
+![book7](https://github.com/balananujith/Book-recommendation/assets/118455793/672354b8-29c5-4789-a84d-07b5654e7466)
+![book8](https://github.com/balananujith/Book-recommendation/assets/118455793/0808afdd-193d-4cf7-8e28-5dc412acaee4)
 
-![book2](https://github.com/balananujith/Book-recommendation/assets/118455793/d09154e6-d8d1-49f0-8329-027ac16e875a)
-![book4](https://github.com/balananujith/Book-recommendation/assets/118455793/978eee3c-1d27-4d8f-9d40-0bec1a7b2439)
-![book3](https://github.com/balananujith/Book-recommendation/assets/118455793/afffde18-2219-4436-91bd-5abcc915709a)
